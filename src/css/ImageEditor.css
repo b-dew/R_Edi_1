@@ -1,0 +1,2182 @@
+* {
+  outline: none !important;
+}
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    left: 0% !important;
+    /*this is to fix modalMessage that is on the kiosk page*/
+  }
+}
+/*Begin Image Editor CSS*/
+#imageEditor .modal-header {
+  /*padding: 8px !important;*/
+  display: inline-block !important;
+  background-color: #3B3D40 !important;
+  height: 60px !important;
+  width: 100%;
+}
+#imageEditor .modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#imageEditor .modal-content {
+  height: auto;
+  min-height: 100%;
+  border: 0 !important;
+  /*border-radius: 0;*/
+}
+#imageEditor-modal .modal-open .modal {
+  overflow-y: hidden !important;
+}
+#imageEditor-modal .row {
+  display: block !important;
+}
+@media (min-width: 576px) {
+  #imageEditor .modal-dialog {
+    max-width: 100% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  #imageEditor .modal-dialog {
+    left: 0%;
+  }
+}
+#imageEditor-modal .modal.fade .modal-dialog {
+  /*transform: none;*/
+  top: 0% !important;
+}
+#imageEditor-modal .modal.fade.in {
+  top: 0% !important;
+}
+#imageEditor .modal-body {
+  max-height: calc(100vh - 145px) !important;
+  /*overflow-y: auto;*/
+  padding-top: 15px !important;
+  padding-left: 15px !important;
+}
+#imageEditor {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  margin-right: 0px !important;
+  /*margin-left: 0px !important;*/
+}
+/*#imageEditor #modalContainer #modalStoreLocator, #modalContainer #modalPickupOrShip, #modalContainer .modal {
+        width: 100% !important;
+        top: 0% !important;
+    }*/
+#imageEditor-modal .modal {
+  width: 100% !important;
+  top: 0% !important;
+  left: 0% !important;
+  right: 0% !important;
+}
+/*#imageEditor-modal #modalContainer #modalStoreLocator, #modalContainer #modalPickupOrShip, #modalContainer .modal {
+    left: 0% !important;
+}*/
+@media screen and (min-width: 768px) {
+  #imageEditor #modalContainer > div.modal {
+    left: 0% !important;
+    width: 100% !important;
+  }
+}
+#imageEditor .modal-backdrop {
+  opacity: 0.5 !important;
+}
+#imageEditor .modal-editor-label-txt {
+  height: 19px;
+  font-family: inherit;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none solid #ffffff;
+  padding-left: 12px;
+  display: inline-block;
+}
+#imageEditor .modal-footer {
+  justify-content: flex-start !important;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 0px solid #e5e5e5 !important;
+  display: table;
+  background-color: #ffffff !important;
+  padding: 15px !important;
+}
+#imageEditor .modal-editor-footer-txt {
+  width: 43px;
+  height: 19px;
+  font-family: inherit;
+  font-size: 16px;
+  color: #3b3d40;
+  text-decoration: none solid #3b3d40;
+  margin-right: 18px;
+}
+#imageEditor .modal-editor-footer-img {
+  width: 26px;
+  height: 26px;
+  fill: #3d3d40;
+}
+#imageEditor .image-editor-footer-bar {
+  width: 1px;
+  height: 42px;
+  opacity: 0.4;
+  background-color: #3d3d40;
+  float: left;
+  margin-right: 18px;
+}
+.sk-cube-grid {
+  width: 200px;
+  height: 200px;
+  margin: 120px auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  /*
+   * Spinner positions
+   * 1 2 3
+   * 4 5 6
+   * 7 8 9
+   */
+}
+.sk-cube-grid .sk-cube {
+  width: 33.33%;
+  height: 33.33%;
+  background-color: #333;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0.0s;
+  animation-delay: 0.0s;
+}
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+@keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+#undoDiv {
+  cursor: pointer !important;
+  display: inline-block !important;
+  float: left;
+}
+#undoDiv :hover {
+  cursor: pointer !important;
+}
+#redoDiv {
+  cursor: pointer !important;
+  display: inline-block !important;
+  float: left;
+}
+#redoDiv :hover {
+  cursor: pointer !important;
+}
+#resetDiv {
+  cursor: pointer !important;
+  display: inline-block !important;
+  float: left;
+}
+#resetDiv :hover {
+  cursor: pointer !important;
+}
+#imageEditor .modal-editor-button-primary {
+  width: 113px;
+  height: 44px;
+  border: 1px solid #0a74c7;
+  border-radius: 3px;
+  background-color: #0a74c7;
+  font-size: 16px;
+  font-family: inherit;
+  color: #ffffff;
+  text-decoration: none solid #ffffff;
+  text-align: center;
+}
+#imageEditor .modal-editor-button-secondary {
+  width: 113px;
+  height: 44px;
+  border: 1px solid #8a8a8a;
+  border-radius: 3px;
+  background-color: #8a8a8a;
+  font-size: 16px;
+  font-family: inherit;
+  color: #ffffff;
+  text-decoration: none solid #ffffff;
+  text-align: center;
+}
+#imageEditor .modal-editor-save-div {
+  display: inline-block;
+  padding-right: 8px;
+  float: right;
+}
+#cropDiv :hover {
+  cursor: pointer !important;
+}
+#cropDiv {
+  padding-right: 34px;
+  display: inline-block;
+  cursor: pointer !important;
+}
+.cropImg {
+  width: 26px;
+  height: 26px;
+  fill: #ffffff;
+}
+#cropDivActive {
+  padding-right: 34px;
+  /*display: inline-block !important;*/
+  float: left;
+  /*width: 113px;*/
+  height: 60px;
+  background-color: #0a74c7;
+  margin-top: -9px;
+  padding-top: 9px;
+  padding-left: 20px;
+}
+#redEyeDiv :hover {
+  cursor: pointer !important;
+}
+#redEyeDiv {
+  padding-right: 34px;
+  display: inline-block;
+  cursor: pointer !important;
+}
+.redEyeImg {
+  width: 26px;
+  height: 26px;
+  fill: #ffffff;
+}
+#redEyeImg {
+  width: 26px;
+  height: 26px;
+  fill: #ffffff;
+}
+#filterDiv :hover {
+  cursor: pointer !important;
+}
+#filterDiv {
+  padding-right: 34px;
+  display: inline-block;
+  cursor: pointer !important;
+}
+#filterImg {
+  width: 26px;
+  height: 26px;
+  fill: #ffffff;
+}
+.filterImg {
+  width: 26px;
+  height: 26px;
+  fill: #ffffff;
+}
+#adjustDiv :hover {
+  cursor: pointer !important;
+}
+#adjustDiv {
+  padding-right: 34px;
+  display: inline-block;
+  cursor: pointer !important;
+}
+#adjustImg {
+  width: 26px;
+  height: 26px;
+  fill: #ffffff;
+}
+.adjustImg {
+  width: 26px;
+  height: 26px;
+  fill: #ffffff;
+}
+#orientationDiv :hover {
+  cursor: pointer !important;
+}
+#orientationDiv {
+  padding-right: 34px;
+  display: inline-block;
+  cursor: pointer !important;
+}
+.orientationImg {
+  width: 26px;
+  height: 26px;
+  fill: #ffffff;
+}
+#orientationImg {
+  width: 26px;
+  height: 26px;
+  fill: #ffffff;
+}
+#orientationDivActive {
+  padding-right: 34px;
+  display: inline-block !important;
+  /*width: 160px;*/
+  height: 60px;
+  background-color: #0a74c7;
+  margin-top: -9px;
+  padding-top: 9px;
+  padding-left: 20px;
+}
+#redeyeDivActive {
+  padding-right: 34px;
+  display: inline-block !important;
+  /*width: 160px;*/
+  height: 60px;
+  background-color: #0a74c7;
+  padding-top: 9px;
+  padding-left: 20px;
+}
+#filterDivActive {
+  padding-right: 34px;
+  display: inline-block !important;
+  /*width: 160px;*/
+  height: 60px;
+  background-color: #0a74c7;
+  margin-top: -9px;
+  padding-top: 9px;
+  padding-left: 20px;
+}
+#adjustDivActive {
+  padding-right: 34px;
+  display: inline-block !important;
+  /*width: 160px;*/
+  height: 60px;
+  background-color: #0a74c7;
+  margin-top: -9px;
+  padding-top: 9px;
+  padding-left: 20px;
+}
+#closeModal {
+  width: 32px;
+  height: 32px;
+  fill: #ffffff;
+  cursor: pointer !important;
+}
+#closeDiv {
+  display: inline-block !important;
+  padding-right: 76px;
+  cursor: pointer;
+}
+#closeDiv .modal-editor-label-txt {
+  cursor: pointer;
+}
+.canvas-container,
+.img-preview {
+  background-color: #ffffff !important;
+  text-align: center;
+}
+.canvas-container {
+  display: none;
+}
+.sizeCapsule {
+  width: 98px;
+  height: 35px;
+  border: 1px solid #3b3d40;
+  border-radius: 3px;
+  background-color: #3b3d40;
+  font-family: inherit;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none solid #ffffff;
+  text-align: center;
+  float: right;
+  padding-top: 5px;
+}
+#rotationButtons {
+  margin-right: 35px !important;
+  display: inline-block;
+}
+#flipButtons {
+  display: inline-block;
+}
+#rotationButtons .btn-rotate {
+  width: 80px;
+  height: 44px;
+  border: 1px solid #0a74c7;
+  border-radius: 3px;
+  background-color: #0a74c7;
+  margin-left: 5px;
+  margin-top: 0;
+}
+#flipButtons .btn-flip {
+  width: 80px;
+  height: 44px;
+  border: 1px solid #0a74c7;
+  border-radius: 3px;
+  background-color: #0a74c7;
+  margin-left: 5px;
+  margin-top: 0;
+}
+#rotationButtons .rotate-left-icon {
+  background: url('../images/orientation-rotate-left.svg') no-repeat top left;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  height: 26px;
+  width: 26px;
+  margin-top: -10px;
+  vertical-align: middle;
+}
+#rotationButtons .rotate-right-icon {
+  background: url('../images/orientation-rotate-right.svg') no-repeat top left;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  height: 26px;
+  width: 26px;
+  margin-top: -10px;
+  vertical-align: middle;
+}
+#flipButtons .flip-vertical-icon {
+  background: url('../images/flip-vertical.svg') no-repeat top left;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  height: 26px;
+  width: 26px;
+  margin-top: -10px;
+  vertical-align: middle;
+}
+#flipButtons .flip-horizontal-icon {
+  background: url('../images/flip-horizontal.svg') no-repeat top left;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  height: 26px;
+  width: 26px;
+  margin-top: -10px;
+  vertical-align: middle;
+}
+#rotationButtons .rotate-text,
+#flipButtons .mirror-text {
+  height: 19px;
+  background-color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  color: #3b3d40;
+  text-decoration: none solid #3b3d40;
+  text-align: center;
+  font-weight: bold;
+}
+#imgEditorCanvas {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 5%);
+}
+.imageEditorBodyContainer {
+  text-align: -webkit-center;
+  text-align: center;
+}
+.previewImage {
+  object-fit: contain;
+}
+.previewImageAsBackground {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#divPreviewImage {
+  overflow: hidden;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+  /*.previewImage {
+        width: auto !important;
+        height: auto !important;
+        max-height:100%;
+        max-width:100%;
+    }*/
+}
+.custom-aspect-ratio {
+  float: left;
+}
+#divCropper {
+  display: none;
+  max-width: 1140px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  flex-direction: column;
+}
+#divAdjust {
+  display: none;
+  max-width: 1140px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  flex-direction: column;
+}
+#divAdjust .img-container {
+  flex: 1 0 auto;
+}
+#divFilter {
+  display: none;
+  max-width: 1140px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  flex-direction: column;
+}
+#divFilter .img-container {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#divFilter .img-container #filterCanvas {
+  max-width: 100%;
+  max-height: 100%;
+}
+#divFilter .filterThumbnail {
+  width: 90% !important;
+  height: 90% !important;
+  max-width: 100px;
+  max-height: 100px;
+  cursor: pointer;
+}
+#modalEditSaveNewEditor .modal-message {
+  height: 19px;
+  font-size: 16px;
+  color: #3b3d40;
+  margin-top: 50px;
+  font-weight: bold;
+}
+#modalEditCloseNewEditor .modal-message,
+#modalEditImageCloseSubEditor .modal-message {
+  height: 19px;
+  font-size: 15px;
+  color: #3b3d40;
+  margin-top: 40px;
+  font-weight: bold;
+}
+#modalEditSaveNewEditor .btn-save-copy {
+  width: 182px;
+  height: 44px;
+  border: 1px solid #8a8a8a;
+  border-radius: 3px;
+  background-color: #8a8a8a;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  padding: 0;
+  margin-top: 5px;
+}
+#modalEditSaveNewEditor .btn-save-orig {
+  width: 182px;
+  height: 44px;
+  border: 1px solid #0a74c7;
+  border-radius: 3px;
+  background-color: #0a74c7;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  padding: 0;
+  margin-top: 5px;
+}
+#modalEditCloseNewEditor .btn-close,
+#modalEditCloseNewEditor .btn-resume,
+#modalEditImageCloseSubEditor .btn-close,
+#modalEditImageCloseSubEditor .btn-resume {
+  width: 120px;
+  height: 44px;
+  border: 1px solid #8a8a8a;
+  border-radius: 3px;
+  background-color: #8a8a8a;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none solid #ffffff;
+  text-align: center;
+  padding: 0;
+  margin-top: 15px;
+}
+#modalEditCloseNewEditor .btn-save {
+  width: 120px;
+  height: 44px;
+  border: 1px solid #0a74c7;
+  border-radius: 3px;
+  background-color: #0a74c7;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none solid #ffffff;
+  text-align: center;
+  padding: 0;
+  margin-top: 15px;
+}
+#modalEditImageCloseSubEditor .btn-save {
+  width: 120px;
+  height: 44px;
+  border: 1px solid #0a74c7;
+  border-radius: 3px;
+  background-color: #0a74c7;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none solid #ffffff;
+  text-align: center;
+  padding: 0;
+  margin-top: 23px;
+}
+#modalEditSaveNewEditor .vertical-alignment-helper,
+#modalEditCloseNewEditor .vertical-alignment-helper,
+#modalEditImageCloseSubEditor .vertical-alignment-helper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+#modalEditSaveNewEditor .vertical-align-center,
+#modalEditCloseNewEditor .vertical-align-center,
+#modalEditImageCloseSubEditor .vertical-align-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+#modalEditSaveNewEditor,
+#modalEditCloseNewEditor,
+#modalEditImageCloseSubEditor {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  /*display: none;*/
+  z-index: 200000 !important;
+}
+#modalEditSaveNewEditor .popup,
+#modalEditCloseNewEditor .popup,
+#modalEditImageCloseSubEditor .popup {
+  max-width: 600px;
+  width: 80%;
+  max-height: 300px;
+  height: 80%;
+  padding: 20px;
+  position: relative;
+  background: #fff;
+  margin: 20px auto;
+  width: 435px !important;
+  height: 216px !important;
+  text-align: center;
+}
+#modalEditSaveNewEditor .close-modal,
+#modalEditCloseNewEditor .close-modal,
+#modalEditImageCloseSubEditor .close-modal {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  fill: #8a8a8a;
+}
+.modal.fade .modal-dialog {
+  transform: none;
+}
+.modal.fade:not(.in).right .modal-dialog {
+  /*right: -1900px;*/
+  -webkit-transform: translate3d(100%, 0, 0) !important;
+  transform: translate3d(100%, 0, 0) !important;
+  /*transition: transform 600ms linear;*/
+}
+.modal.right.fade.in .modal-dialog {
+  right: 0;
+}
+/*#imageEditor .oper-div {
+    display: table-cell;
+    text-align: left;
+    width: 33%;
+    vertical-align: middle;
+}*/
+@media only screen and (max-width: 1000px) {
+  .image-editor-footer-bar {
+    margin-right: 6px;
+  }
+  .modal-editor-footer-txt {
+    margin-right: 6px;
+  }
+  #cropDiv {
+    padding-right: 15px;
+  }
+  #orientationDiv {
+    padding-right: 15px;
+  }
+  #redEyeDiv {
+    padding-right: 15px;
+  }
+  #filterDiv {
+    padding-right: 0px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .image-editor-footer-bar {
+    margin-right: 2px;
+  }
+  .modal-editor-footer-txt {
+    margin-right: 8px;
+  }
+}
+@media only screen and (max-width: 782px) {
+  .modal-editor-footer-img {
+    margin-right: 12px;
+  }
+  .modal-editor-footer-txt {
+    display: none;
+  }
+  .image-editor-footer-bar {
+    display: none;
+  }
+  #cropDiv {
+    padding-right: 2px;
+  }
+  #cropLbl {
+    padding-right: 2px;
+  }
+  #orientationDiv {
+    padding-right: 2px;
+  }
+  #orientationLbl {
+    padding-right: 2px;
+  }
+  #redEyeDiv {
+    padding-right: 2px;
+  }
+  #redEyeLbl {
+    padding-right: 2px;
+  }
+  #filterDiv {
+    padding-right: 2px;
+  }
+  #filterLbl {
+    padding-right: 2px;
+  }
+  #adjustDiv {
+    padding-right: 0px;
+  }
+  #adjustLbl {
+    padding-right: 0px;
+  }
+  .modal-editor-save-div {
+    padding-right: 60px;
+  }
+}
+@media only screen and (max-width: 782px) {
+  .modal-editor-label-txt {
+    display: none;
+  }
+  #cropDiv {
+    padding-right: 15px;
+  }
+  #orientationDiv {
+    padding-right: 15px;
+  }
+  #redEyeDiv {
+    padding-right: 15px;
+  }
+  #filterDiv {
+    padding-right: 15px;
+  }
+  #adjustDiv {
+    padding-right: 0px;
+  }
+}
+#imageEditor .status-div {
+  display: table-cell;
+  text-align: center;
+  width: 33%;
+  vertical-align: middle;
+}
+.status-loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3D3D40;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  display: inline-block;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#imageEditor .zoom-div {
+  display: table-cell;
+  text-align: right;
+  width: 33%;
+  vertical-align: middle;
+}
+#imageEditor .status-label {
+  font-family: inherit;
+  font-size: 16px;
+  color: #3b3d40;
+  font-style: italic;
+  text-decoration: none solid #3b3d40;
+  text-align: center;
+}
+#imageEditor .zoom-text {
+  font-family: inherit;
+  font-size: 16px;
+  color: #3d3d40;
+  text-decoration: none solid #3d3d40;
+  margin-right: 10px;
+  margin-left: 50%;
+  float: left;
+  font-weight: bold;
+}
+.zoom-redeye-slider {
+  width: 132px !important;
+  height: 20px;
+  background: #3b3d40;
+  border: 1px solid #3b3d40 !important;
+}
+.zoom-redeye-slider::-moz-range-track {
+  width: 132px !important;
+  height: 20px;
+  background: #3b3d40;
+  border: 1px solid #3b3d40 !important;
+}
+.zoom-redeye-slider::-ms-track {
+  width: 132px !important;
+  height: 2px;
+  background: #3b3d40;
+  border: 1px solid #3b3d40 !important;
+}
+.zoom-redeye-slider-deactivated {
+  width: 132px !important;
+  height: 20px;
+  border: 1px solid #3d3d40;
+  background-color: #ffffff;
+}
+.zoom-redeye-slider-deactivated::-ms-track {
+  width: 132px !important;
+  height: 2px;
+  border: 1px solid #3d3d40;
+  background-color: #ffffff;
+}
+@-moz-document url-prefix() {
+  #redeyeZoomRange {
+    /*margin-top: 3%;*/
+  }
+  #divAdjustSliders input[type=range] {
+    margin-top: 7px;
+  }
+}
+.zoom-redeye-slider::-webkit-slider-thumb {
+  background: #ffffff;
+}
+.zoom-redeye-slider-deactivated::-webkit-slider-thumb {
+  background: #3d3d40;
+}
+.zoom-redeye-slider::-moz-range-thumb {
+  background: #ffffff !important;
+}
+.zoom-redeye-slider-deactivated::-moz-range-thumb {
+  background: #3d3d40 !important;
+}
+.zoom-redeye-slider::-ms-thumb {
+  background: #ffffff !important;
+  /*height: 100%;*/
+}
+.zoom-redeye-slider-deactivated::-ms-thumb {
+  background: #3d3d40 !important;
+  /*height: 100%;*/
+}
+.zoom-footer::-webkit-slider-thumb {
+  background: #3d3d40;
+}
+#imageEditor input[type=range] {
+  /*removes default webkit styles*/
+  -webkit-appearance: none;
+  /*fix for FF unable to apply focus style bug */
+  border: 1px solid white;
+  /*required for proper track sizing in FF*/
+  width: 200px;
+  padding: 0;
+  margin: 0;
+  height: 22px;
+}
+#imageEditor input[type=range]::-webkit-slider-runnable-track {
+  width: 200px;
+  height: 2px;
+  background: #c9c9c9;
+  border: none;
+  border-radius: 5px;
+  margin-top: 0px;
+}
+#imageEditor input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  margin-top: -10px;
+}
+#imageEditor input[type=range]:focus {
+  outline: none;
+}
+#imageEditor input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+#imageEditor input[type=range]::-moz-range-track {
+  /*width: 200px;*/
+  height: 2px;
+  background: #c9c9c9;
+  border: none;
+  border-radius: 5px;
+}
+#imageEditor input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background: #3D3D40;
+}
+/*hide the outline behind the border*/
+#imageEditor input[type=range]:-moz-focusring {
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+#imageEditor input[type=range]::-ms-track {
+  width: 200px;
+  height: 2px;
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 10px 0;
+  /*remove default tick marks*/
+  color: transparent;
+}
+#imageEditor input[type=range]::-ms-thumb {
+  border: none;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background: #3D3D40;
+}
+@supports (-ms-accelerator:true) {
+  /* IE Edge 12+ CSS */
+  #imageEditor input[type=range] {
+    height: 28px;
+  }
+  .zoom-redeye-slider {
+    height: 28px !important;
+    margin-top: 0px !important;
+  }
+  .zoom-redeye-slider::-ms-thumb {
+    background: #ffffff !important;
+  }
+  .zoom-redeye-slider-deactivated {
+    height: 28px !important;
+    margin-top: 0px !important;
+  }
+  .zoom-redeye-slider-deactivated::-ms-thumb {
+    background: #3d3d40 !important;
+  }
+  #imageEditor input[type=range]::-ms-thumb {
+    margin-top: -3px;
+  }
+}
+@supports (-ms-ime-align:auto) {
+  /* IE Edge 16+ CSS */
+  #imageEditor input[type=range] {
+    height: 28px;
+  }
+  .zoom-redeye-slider {
+    height: 28px !important;
+    margin-top: 0px !important;
+  }
+  .zoom-redeye-slider::-ms-thumb {
+    background: #ffffff !important;
+  }
+  .zoom-redeye-slider-deactivated {
+    height: 28px !important;
+    margin-top: 0px !important;
+  }
+  .zoom-redeye-slider-deactivated::-ms-thumb {
+    background: #3d3d40 !important;
+  }
+  #imageEditor input[type=range]::-ms-thumb {
+    margin-top: -3px;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  #imageEditor input[type=range] {
+    height: 24px;
+  }
+  #redeyeZoomRange {
+    height: 35px;
+  }
+  #divAdjustSliders input[type=range] {
+    height: 60px;
+    margin-top: -19px;
+    padding: 0;
+  }
+  #redEyeButtons input[type=range] {
+    margin-top: -6px;
+  }
+  .zoom-redeye-slider-deactivated {
+    background-color: transparent;
+  }
+  .redeye-zoom-text-deactivated {
+    opacity: 0.4;
+  }
+  .zoom-redeye-slider-deactivated {
+    opacity: 0.4;
+  }
+  #imageEditor input[type=range]::-ms-tooltip {
+    display: none;
+  }
+  #divAdjustSliders {
+    bottom: 50px !important;
+  }
+  #divAdjustSliders .sliders {
+    height: 265px !important;
+    padding: 18px !important;
+  }
+}
+#imageEditor input[type=range]::-ms-fill-lower {
+  /*background: #c9c9c9;*/
+  background: #4697fa;
+  border-radius: 5px;
+}
+#imageEditor input[type=range]::-ms-fill-upper {
+  background: #c9c9c9;
+  border-radius: 5px;
+}
+#imageEditor input[type=range]:focus::-ms-fill-lower {
+  background: #4697fa;
+}
+#imageEditor input[type=range]:focus::-ms-fill-upper {
+  background: #c9c9c9;
+}
+@media only screen and (min-width: 1500px) and (max-width: 1600px) {
+  #imageEditor .zoom-text {
+    margin-left: 45%;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+  #imageEditor .zoom-text {
+    margin-left: 40%;
+  }
+  #imageEditor input[type=range] {
+    width: 175px !important;
+  }
+  #imageEditor input[type=range]::-webkit-slider-runnable-track {
+    width: 175px !important;
+  }
+  #imageEditor input[type=range]::-moz-range-track {
+    width: 175px !important;
+  }
+  #imageEditor input[type=range]::-ms-track {
+    width: 175px !important;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+  #redEyeButtons .zoom-text {
+    /*margin-left: 40%;*/
+  }
+  #redEyeButtons input[type=range] {
+    width: 132px !important;
+  }
+  #redEyeButtons input[type=range]::-webkit-slider-runnable-track {
+    width: 132px !important;
+  }
+  #redEyeButtons input[type=range]::-moz-range-track {
+    width: 132px !important;
+  }
+  #redEyeButtons input[type=range]::-ms-track {
+    width: 132px !important;
+  }
+}
+#divRatioButtons {
+  width: 100%;
+  height: 50px;
+  /*padding-right: 96px;
+    padding-left: 88px;*/
+  display: inline-flex;
+  background-color: #3B3D40;
+  border: 1px solid #3b3d40;
+  border-radius: 3px;
+}
+#divRatioButtons .btn-primary {
+  border-radius: 3px;
+  /*padding: 0 !important;*/
+  margin: 0 !important;
+  background-color: #3B3D40;
+  border: none !important;
+}
+#divRatioButtons .btn {
+  /*margin-top: 0.5em !important;*/
+}
+#divRatioButtons .btn-primary.active {
+  border-radius: 3px;
+  border: 1px solid #0a74c7;
+  background-color: #0a74c7;
+}
+.docs-tooltip {
+  margin: 0;
+}
+#cbLockDimention {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6d7078;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 0;
+  margin-left: 25px;
+}
+.img-container {
+  text-align: -moz-center !important;
+}
+.img-container > img {
+  max-height: 650px;
+}
+#redEyeButtons {
+  display: inline-flex;
+  width: 420px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.redEyeBrush {
+  width: 210px;
+  height: 60px;
+  /*background-color: #3b3d40;*/
+  border-radius: 3px;
+  position: relative;
+  /*border: 2px solid #3b3d40 !important;*/
+}
+.redEye-buttons-deactivated {
+  border: 2px solid #3b3d40;
+  opacity: 0.4;
+}
+.redeye-brush-circle-small {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+  -webkit-box-shadow: 0 0 1px 0px #ffffff;
+  box-shadow: 0 0 1px 0px #ffffff;
+  width: 10px;
+  height: 10px;
+  z-index: 86;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  /*margin-bottom: 4.5px;*/
+  margin: 0 auto 4.5px auto;
+}
+.redeye-brush-circle-med {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+  -webkit-box-shadow: 0 0 1px 0px #ffffff;
+  box-shadow: 0 0 1px 0px #ffffff;
+  width: 15px;
+  height: 15px;
+  z-index: 86;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  /*margin-bottom: 2.5px;*/
+  margin: 0 auto 2.5px auto;
+}
+.redeye-brush-circle-lg {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+  -webkit-box-shadow: 0 0 1px 0px #ffffff;
+  box-shadow: 0 0 1px 0px #ffffff;
+  width: 20px;
+  height: 20px;
+  z-index: 86;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  margin: 0 auto;
+}
+.redeye-cursor-text {
+  width: 70px;
+  height: 17px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none solid #ffffff;
+  text-align: center;
+  margin-top: 0;
+}
+.redEyeBrush-selected {
+  background-color: #0a74c7 !important;
+  border: 2px solid #0a74c7 !important;
+}
+.redEyeBrush-non-selected {
+  background-color: #3b3d40 !important;
+  border: 2px solid #3b3d40 !important;
+}
+.redEyeBrush-deactivated {
+  background-color: #ffffff !important;
+  /*border: 2px solid #3b3d40 !important;*/
+}
+.redEyeBrush-circle-deactivated {
+  border: 2px solid #3d3d40;
+}
+.redEyeBrush-text-deactivated {
+  color: #3d3d40 !important;
+}
+#redEyeBrushSmall {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 100%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+#redEyeBrushMed {
+  display: inline-block;
+  position: absolute;
+  left: 70px;
+  width: 70px;
+  height: 100%;
+}
+#redEyeBrushLg {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  width: 70px;
+  height: 100%;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.redeye-zoom {
+  display: inline-block;
+  width: 210px;
+  height: 60px;
+  border: 2px solid #3b3d40;
+  border-radius: 3px;
+  background-color: #3b3d40;
+}
+.redeye-zoom-deactivated {
+  pointer-events: initial;
+  display: inline-block;
+  width: 210px;
+  height: 60px;
+  opacity: 0.4;
+  border: 2px solid #3d3d40;
+  border-radius: 3px;
+}
+.redeye-zoom-text {
+  width: 42px;
+  height: 17px;
+  font-family: inherit !important;
+  font-size: 14px !important;
+  color: #ffffff !important;
+  text-decoration: none solid #ffffff !important;
+  margin: 0 !important;
+}
+.redeye-zoom-text-deactivated {
+  pointer-events: initial;
+  display: inline-block;
+  width: 42px;
+  height: 17px;
+  /*opacity: 0.4;*/
+  font-family: inherit !important;
+  font-size: 14px !important;
+  color: #3d3d40 !important;
+  text-decoration: none solid #3b3d40 !important;
+  margin: 0 !important;
+}
+.redeye-zoom-align {
+  /*width: 210px;
+    height: 60px;*/
+  position: absolute;
+  /* margin: -10px auto auto 12px;
+  top: 50%; */
+}
+.redeye-zoom-align-deactivated {
+  pointer-events: none;
+}
+.redeye-small-align {
+  padding-top: 15px;
+  text-align: center;
+}
+.redeye-med-align {
+  padding-top: 12.25px;
+  text-align: center;
+}
+.redeye-lg-align {
+  padding-top: 10px;
+  text-align: center;
+}
+#divFooterContents {
+  display: table;
+  width: 100%;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+#divFilter .slick-prev:before {
+  color: black !important;
+  content: "\f104" !important;
+  font-size: 35px !important;
+  font-family: FontAwesome !important;
+  position: relative !important;
+  top: -20px !important;
+}
+#divFilter .slick-next:before {
+  color: black !important;
+  content: "\f105" !important;
+  font-size: 35px !important;
+  font-family: FontAwesome !important;
+  position: relative !important;
+  top: -20px !important;
+}
+#divFilter .filterSelected {
+  border: 3px solid #0a74c7;
+}
+#modalEditImageCloseSubEditor #filterSave,#redEyeSave,#adjustSave {
+  display: inline-block;
+}
+#modalEditImageCloseSubEditor #filterSave .btn-save {
+  margin-top: 15px !important ;
+}
+#modalEditImageCloseSubEditor #redEyeSave .btn-save {
+  margin-top: 15px !important;
+}
+#modalEditImageCloseSubEditor #adjustSave .btn-save {
+  margin-top: 15px !important;
+}
+.zoom-cursor {
+  cursor: move;
+}
+.zoom-cursor-deactivated {
+  cursor: pointer;
+}
+.zoom-footer-display {
+  opacity: 0;
+}
+#divCanvas {
+  position: relative;
+}
+/*@media only screen and (min-width: 1300px) and (max-width: 1500px) {
+    #imageEditor .modal-body {
+        max-height: calc(100vh - 185px) !important;
+    }
+}*/
+.footer-contents {
+  width: 100%;
+  display: table;
+}
+#divAdjustSliders .sliders {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #3b3d40;
+  border-radius: 3px;
+  background-color: #3b3d40 !important;
+  color: #ffffff;
+  height: 155px;
+}
+#divAdjustSliders {
+  position: relative !important;
+  bottom: 80px;
+}
+#divAdjustSliders .slider-text {
+  font-family: Lato;
+  font-size: 16px;
+  float: left;
+  text-align: right;
+  height: 19px;
+  width: 104px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+#divAdjustSliders .adjust-slider {
+  width: 200px !important;
+  height: 12px;
+  background: #3b3d40;
+  border: 1px solid #3b3d40 !important;
+  margin-top: 2px;
+}
+#divAdjustSliders .adjust-slider::-moz-range-track {
+  width: 200px !important;
+  height: 12px;
+  background: #3b3d40;
+  border: 1px solid #3b3d40 !important;
+}
+#divAdjustSliders .adjust-slider::-ms-track {
+  width: 200px !important;
+  height: 100%;
+  background: #3b3d40;
+  border: 1px solid #3b3d40 !important;
+}
+#divAdjustSliders .adjust-slider::-webkit-slider-thumb {
+  background: #ffffff;
+}
+#divAdjustSliders .adjust-slider::-moz-range-thumb {
+  background: #ffffff !important;
+}
+#divAdjustSliders .adjust-slider::-ms-thumb {
+  background: #ffffff !important;
+  height: 100%;
+}
+#modalEditSaveNewEditor .popup .btn,
+#modalEditCloseNewEditor .popup .btn,
+#modalEditImageCloseSubEditor .popup .btn {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+#modalEditSaveNewEditor .modal-message,
+#modalEditCloseNewEditor .modal-message,
+#modalEditImageCloseSubEditor .modal-message {
+  height: auto;
+  margin-bottom: 1em;
+}
+#modalEditSaveNewEditor .kiosk-message {
+  margin-top: 75px !important;
+}
+#imageEditor-modal .mobile {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  #imageEditor-modal .modal-content {
+    /*height: 100%;*/
+    display: flex;
+    flex-direction: column;
+  }
+  #imageEditor-modal .modal-header {
+    display: flex !important;
+    flex-flow: row wrap;
+    /*justify-content:space-around;*/
+    align-items: center;
+    position: relative;
+    height: auto !important;
+    padding: 0 0px !important;
+    flex: 0 0 auto;
+  }
+  #imageEditor-modal .modal-header::before,
+  #imageEditor-modal .modal-header::after {
+    content: '';
+    width: 100%;
+    order: 1;
+  }
+  #imageEditor-modal .modal-header #closeDiv {
+    margin-left: 8px;
+    margin-right: 25px;
+    margin: 14px 25px 14px 8px;
+    padding: 0;
+  }
+  #imageEditor-modal .modal-header #closeDiv .modal-editor-label-txt {
+    display: none;
+  }
+  #imageEditor-modal .modal-header .menu-trigger.mobile {
+    display: block;
+    margin: 0px 10px;
+  }
+  #imageEditor-modal .modal-header .menu-trigger.mobile .fa-bars {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  #imageEditor-modal .modal-header .menu-switcher.mobile {
+    position: relative;
+    top: 5px;
+    left: 20px;
+    color: #fff;
+    display: inline-block;
+    width: 45px;
+  }
+  #imageEditor-modal .modal-header .sub-menu.mobile {
+    position: absolute;
+    background-color: #8A8A8A;
+    top: 58px;
+    left: 0px;
+    right: 0px;
+    z-index: 99;
+    display: flex;
+  }
+  #imageEditor-modal .modal-header .sub-menu.mobile .sub-menu-back {
+    color: #fff;
+    font-weight: bold;
+    height: 0px;
+  }
+  #imageEditor-modal .modal-header .sub-menu.mobile .menu-switcher {
+    display: none;
+  }
+  #imageEditor-modal .modal-header .sub-menu.mobile .menu-item {
+    opacity: 0;
+    visibility: collapse;
+    display: none !important;
+    transition: all ease 0.5s;
+    height: 0px;
+    padding: 0px 15px;
+    color: #fff;
+    font-weight: bold;
+    width: 49%;
+    max-width: 300px;
+  }
+  #imageEditor-modal .modal-header .sub-menu.mobile.focus-within {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    outline: none;
+  }
+  #imageEditor-modal .modal-header .sub-menu.mobile.focus-within::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 98;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    top: -10px;
+    left: 70px;
+    background-color: #8A8A8A;
+  }
+  #imageEditor-modal .modal-header .sub-menu.mobile.focus-within .menu-item {
+    display: inline-block !important;
+    opacity: 1;
+    height: 40px;
+    visibility: visible;
+    padding: 10px 15px;
+  }
+  #imageEditor-modal .modal-header .sub-menu.mobile.focus-within .sub-menu-back,
+  #imageEditor-modal .modal-header .sub-menu.mobile.focus-within .menu-switcher {
+    display: block;
+  }
+  #imageEditor-modal .modal-header #imageEditorOptions {
+    position: absolute;
+    background-color: #8A8A8A;
+    top: 58px;
+    left: 0px;
+    right: 0px;
+    z-index: 99;
+  }
+  #imageEditor-modal .modal-header #imageEditorOptions .menu-item {
+    opacity: 0;
+    visibility: collapse;
+    display: none !important;
+    transition: all ease 0.5s;
+    height: 0px;
+    padding: 0px 15px;
+  }
+  #imageEditor-modal .modal-header #imageEditorOptions.focus-within {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    outline: none;
+  }
+  #imageEditor-modal .modal-header #imageEditorOptions.focus-within::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 98;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    top: -10px;
+    left: 70px;
+    background-color: #8A8A8A;
+  }
+  #imageEditor-modal .modal-header #imageEditorOptions.focus-within .menu-item {
+    display: block !important;
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+    padding: 3px 15px;
+  }
+  #imageEditor-modal .modal-header #imageEditorOptions .modal-editor-save-div {
+    position: absolute;
+    z-index: 98;
+    top: -50px;
+    right: 0px;
+  }
+  #imageEditor-modal .modal-header .tool-header {
+    display: block;
+    order: 2;
+    width: 100%;
+  }
+  #imageEditor-modal .modal-header .tool-header .tool-title {
+    float: none;
+    height: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: block !important;
+  }
+  #imageEditor-modal .modal-header .tool-header .modal-editor-save-div {
+    position: absolute;
+    top: 8px;
+    right: 120px;
+  }
+  #imageEditor-modal .modal-header .tool-header .modal-editor-save-div.docs-buttons {
+    right: 0px;
+  }
+  #imageEditor-modal .modal-header #imageEditorCropperOptions .custom-aspect-ratio {
+    background: #8a8a8a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    float: none;
+  }
+  #imageEditor-modal .modal-header #imageEditorCropperOptions .custom-aspect-ratio .modal-editor-label-txt {
+    padding: 0 0.5% !important;
+    height: auto;
+    margin: 0 1%;
+    font-size: 14px;
+  }
+  #imageEditor-modal .modal-header #imageEditorCropperOptions .custom-aspect-ratio input[type="text"] {
+    margin: 0;
+  }
+  #imageEditor-modal .modal-header #imageEditorCropperOptions .custom-aspect-ratio input[type="text"] + .modal-editor-label-txt {
+    display: none;
+  }
+  #imageEditor-modal .modal-header #imageEditorCropperOptions .custom-aspect-ratio #cbLockDimention {
+    margin: 0 1%;
+    background-color: transparent;
+  }
+  #imageEditor-modal .modal-body {
+    flex: 1 0 auto;
+    /*padding: 5px !important;*/
+    max-height: unset !important;
+    width: 100%;
+    overflow-y: unset;
+    display: flex;
+    flex-direction: column;
+  }
+  #imageEditor-modal .modal-body > div.row {
+    display: flex !important;
+    flex: 1 0 auto;
+    flex-direction: column;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer .canvas-container {
+    flex: 1 0 auto;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer .canvas-container #imgEditorCanvas {
+    /* width: 100%; */
+    max-width: 100%;
+    max-height: 50vh;
+    width: auto !important;
+    height: auto !important;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer .previewImage {
+    width: auto !important;
+    height: auto !important;
+    max-height: calc(100vh - 200px);
+    max-width: 100%;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer .previewImage.redeye {
+    max-height: calc(100vh - 235px);
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper {
+    height: 100% !important;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper .img-container,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper .cropper-container.cropper-bg {
+    /*height: 100% !important;
+                            width: 100% !important;*/
+    flex: 1 0 auto;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper .img-container,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper .img-container > img {
+    max-height: calc(100vh - 275px);
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions {
+    /*height: 60px;*/
+    margin: 0;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions .docs-buttons {
+    padding: 0;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions .docs-toggles {
+    overflow-y: hidden;
+    height: 100%;
+    overflow-x: auto;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions .docs-toggles #divRatioButtons {
+    background: none;
+    border: none;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions .docs-toggles .sizeCapsule {
+    display: none;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #rotationButtons,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #flipButtons {
+    margin: 0 2% !important;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #rotationButtons .btn-rotate,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #flipButtons .btn-rotate,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #rotationButtons .btn-flip,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #flipButtons .btn-flip {
+    width: 50px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #rotationButtons .btn-rotate .docs-tooltip,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #flipButtons .btn-rotate .docs-tooltip,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #rotationButtons .btn-flip .docs-tooltip,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #flipButtons .btn-flip .docs-tooltip {
+    margin: 0;
+    padding: 0;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #rotationButtons .btn-rotate .docs-tooltip .rotate-left-icon,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #flipButtons .btn-rotate .docs-tooltip .rotate-left-icon,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #rotationButtons .btn-flip .docs-tooltip .rotate-left-icon,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #flipButtons .btn-flip .docs-tooltip .rotate-left-icon,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #rotationButtons .btn-rotate .docs-tooltip .rotate-right-icon,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #flipButtons .btn-rotate .docs-tooltip .rotate-right-icon,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #rotationButtons .btn-flip .docs-tooltip .rotate-right-icon,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #flipButtons .btn-flip .docs-tooltip .rotate-right-icon,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #rotationButtons .btn-rotate .docs-tooltip .flip-vertical-icon,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #flipButtons .btn-rotate .docs-tooltip .flip-vertical-icon,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #rotationButtons .btn-flip .docs-tooltip .flip-vertical-icon,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #flipButtons .btn-flip .docs-tooltip .flip-vertical-icon,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #rotationButtons .btn-rotate .docs-tooltip .flip-horizontal-icon,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #flipButtons .btn-rotate .docs-tooltip .flip-horizontal-icon,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #rotationButtons .btn-flip .docs-tooltip .flip-horizontal-icon,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #flipButtons .btn-flip .docs-tooltip .flip-horizontal-icon {
+    margin: auto;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #rotationButtons .rotate-text,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #flipButtons .rotate-text,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #rotationButtons .mirror-text,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper #actions #flipButtons .mirror-text {
+    margin: 0;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    overflow: unset;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrush,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redeye-zoom {
+    width: 50%;
+    max-width: 180px;
+    height: 50px;
+    margin: .1rem 0;
+    position: relative;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons .redEyeBrush {
+    display: flex;
+    justify-content: flex-end;
+    border-right: none !important;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons .redEyeBrush.redEye-buttons-deactivated {
+    border: 2px solid #3b3d40;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redeye-zoom {
+    border-left: none !important;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redeye-zoom .zoom-text {
+    display: none;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons .redeye-zoom-align {
+    margin: 0;
+    position: static;
+    padding: 12px 0;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons .redeye-zoom-align .zoom-redeye-slider,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons .redeye-zoom-align .zoom-redeye-slider-deactivated {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushSmall,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushMed,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushLg {
+    position: static;
+    width: 33%;
+    max-width: 58px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushSmall .redeye-small-align,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushMed .redeye-small-align,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushLg .redeye-small-align,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushSmall .redeye-med-align,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushMed .redeye-med-align,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushLg .redeye-med-align,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushSmall .redeye-lg-align,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushMed .redeye-lg-align,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushLg .redeye-lg-align {
+    padding: 0;
+    margin: 0;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushSmall .redeye-small-align > div,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushMed .redeye-small-align > div,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushLg .redeye-small-align > div,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushSmall .redeye-med-align > div,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushMed .redeye-med-align > div,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushLg .redeye-med-align > div,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushSmall .redeye-lg-align > div,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushMed .redeye-lg-align > div,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushLg .redeye-lg-align > div {
+    margin: 0;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons #redEyeBrushLg {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons .redeye-cursor-text {
+    display: none;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons .redeye-label-text.mobile {
+    display: block;
+    width: 100%;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons .redeye-label-text-size,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons .redeye-label-text-zoom {
+    width: 49%;
+    max-width: 180px;
+    display: inline-block;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons .redeye-label-text-size label,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons .redeye-label-text-zoom label {
+    margin: 0;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons .redEye-buttons-deactivated ~ .redeye-label-text .redeye-label-text-size {
+    color: #ccc;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #redEyeButtons .redeye-zoom-deactivated ~ .redeye-label-text .redeye-label-text-zoom {
+    color: #ccc;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divFilter {
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1 0 auto;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divFilter .img-container {
+    flex: 1 0 auto;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divFilter .img-container #filterCanvas {
+    max-width: 100%;
+    max-height: calc(100vh - 265px);
+    width: auto !important;
+    height: auto !important;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divFilter .responsive-img-slider {
+    padding: 0 20px;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divFilter .responsive-img-slider .slick-prev {
+    left: 0;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divFilter .responsive-img-slider .slick-next {
+    right: 0;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divFilter .filterTitle {
+    font-size: 0.7rem;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divAdjust {
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divAdjust .img-container {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divAdjust .img-container #adjustCanvas {
+    max-width: 100%;
+    max-height: 50vh;
+    width: auto !important;
+    height: auto !important;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divAdjust #divAdjustSliders {
+    position: relative !important;
+    bottom: 0px;
+    flex: 0.1 0;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divAdjust .adjust-slider .adjust-slider-header.mobile {
+    display: block;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divAdjust .adjust-slider .adjust-slider-header {
+    background-color: #3b3d40 !important;
+    color: #fff;
+    position: relative;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divAdjust .adjust-slider .adjust-slider-header .switcher-entry {
+    transform-origin: 50% 50%;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    margin: 0;
+    transition: all ease 0.5s;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divAdjust .adjust-slider .adjust-slider-content {
+    border-radius: 0;
+    padding: 0 !important;
+    height: 0 !important;
+    overflow: hidden;
+    border: none;
+    transition: all ease 0.5s;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divAdjust .adjust-slider .adjust-slider-content .slider-text {
+    height: 25px;
+    width: 30%;
+    font-family: inherit;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divAdjust .adjust-slider .adjust-slider-content .adjust-slider {
+    width: 140px !important;
+    display: inline-block;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divAdjust .adjust-slider .adjust-slider-switcher:checked ~ .adjust-slider-header .switcher-entry {
+    transform: rotate(180deg);
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divAdjust .adjust-slider .adjust-slider-switcher:checked ~ .adjust-slider-content {
+    padding: 0 !important;
+    height: 110px !important;
+    overflow-y: auto;
+    border: 1px solid #3b3d40;
+  }
+  #imageEditor-modal .modal-body .editor-label.mobile {
+    display: block;
+    width: 100%;
+    font-style: italic;
+  }
+  #imageEditor-modal .modal-body .editor-label.mobile label {
+    margin-top: 0;
+  }
+  #imageEditor-modal .modal-footer {
+    display: block !important;
+    position: static;
+    padding: 0 !important;
+  }
+  #imageEditor-modal .modal-footer .footer-contents {
+    display: flex;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  #imageEditor-modal .modal-footer .footer-contents.disabled {
+    display: none !important;
+  }
+  #imageEditor-modal .modal-footer .oper-div,
+  #imageEditor-modal .modal-footer .status-div,
+  #imageEditor-modal .modal-footer .zoom-div {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+  #imageEditor-modal .modal-footer .oper-div {
+    height: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    order: 3;
+    margin-bottom: 10px;
+  }
+  #imageEditor-modal .modal-footer .oper-div .image-editor-footer-bar {
+    height: 30px;
+    margin: 0;
+  }
+  #imageEditor-modal .modal-footer .oper-div > div {
+    display: flex !important;
+    align-content: center;
+    float: none;
+  }
+  #imageEditor-modal .modal-footer .oper-div > div .modal-editor-footer-img {
+    margin: 0;
+  }
+  #imageEditor-modal .modal-footer .oper-div > div .modal-editor-footer-txt {
+    display: block;
+    margin: 2px 4px;
+  }
+  #imageEditor-modal .modal-footer .zoom-div {
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  #imageEditor-modal .modal-footer .zoom-div .zoom-text {
+    margin-left: 0px;
+    float: none;
+  }
+  #imageEditor-modal .modal-footer .zoom-div .zoom-range {
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+  }
+  #imageEditor-modal .modal-footer .status-div > label {
+    margin: 0 0 .5em 0;
+  }
+  #modalEditSaveNewEditor .popup,
+  #modalEditCloseNewEditor .popup,
+  #modalEditImageCloseSubEditor .popup {
+    max-height: 100%;
+    max-width: 435px;
+    width: 80% !important;
+    height: auto !important;
+  }
+  #modalEditSaveNewEditor .popup .btn-close,
+  #modalEditCloseNewEditor .popup .btn-close,
+  #modalEditImageCloseSubEditor .popup .btn-close,
+  #modalEditSaveNewEditor .popup .btn-resume,
+  #modalEditCloseNewEditor .popup .btn-resume,
+  #modalEditImageCloseSubEditor .popup .btn-resume,
+  #modalEditSaveNewEditor .popup .btn-save,
+  #modalEditCloseNewEditor .popup .btn-save,
+  #modalEditImageCloseSubEditor .popup .btn-save {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 365px) and (max-width: 550px) {
+  #modalEditSaveNewEditor .btn-close,
+  #modalEditCloseNewEditor .btn-close,
+  #modalEditImageCloseSubEditor .btn-close,
+  #modalEditSaveNewEditor .btn-resume,
+  #modalEditCloseNewEditor .btn-resume,
+  #modalEditImageCloseSubEditor .btn-resume,
+  #modalEditSaveNewEditor .btn-save,
+  #modalEditCloseNewEditor .btn-save,
+  #modalEditImageCloseSubEditor .btn-save {
+    width: 75px;
+  }
+}
+@media screen and (max-height: 425px) {
+ .previewImage,
+ .previewImage.redeye {
+    width: auto !important;
+    height: auto !important;
+    max-height: 100vh;
+    max-width: 100%;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divFilter .img-container #filterCanvas,
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divAdjust .img-container #adjustCanvas {
+    max-width: 100%;
+    max-height: 100vh;
+    width: auto !important;
+    height: auto !important;
+  }
+  #imageEditor-modal .modal-body > div.row .imageEditorBodyContainer #divCropper .img-container > img {
+    max-height: 100vh;
+  }
+}
+
+.imageEditorHeaderDisplay {
+  display: none !important;
+}
+.modal-editor-button-primary {
+  width: 113px;
+  height: 44px;
+  border: 1px solid #0a74c7;
+  border-radius: 3px;
+  background-color: #0a74c7;
+  font-size: 16px;
+  font-family: inherit;
+  color: #ffffff;
+  text-decoration: none solid #ffffff;
+  text-align: center;
+}
+.modal-editor-save-div {
+  display: inline-block !important;
+  padding-right: 8px;
+  float: right;
+}
+.modal-editor-button-secondary {
+  width: 113px;
+  height: 44px;
+  border: 1px solid #8a8a8a;
+  border-radius: 3px;
+  background-color: #8a8a8a;
+  font-size: 16px;
+  font-family: inherit;
+  color: #ffffff;
+  text-decoration: none solid #ffffff;
+  text-align: center;
+}
+.imageEditorRedEyeOptions {
+  display: inline-block;
+}

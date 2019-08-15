@@ -1,0 +1,27 @@
+{
+  "name": "image-editor-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cropperjs": "^1.3.0",
+    "jquery": "^3.3.1",
+    "react": "^16.4.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-async-script-loader": "^0.3.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.4.0",
+    "react-scripts": "1.1.4",
+    "react-transition-group": "^1.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "https://b-dew.github.io/R_Edi_1",
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}

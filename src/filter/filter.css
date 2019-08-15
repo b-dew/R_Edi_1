@@ -1,0 +1,33 @@
+#divFilter .slick-prev:before {
+    color: black !important;
+    content: "\f104" !important;
+    font-size: 35px !important;
+    font-family: FontAwesome !important;
+    position: relative !important;
+    top: -20px !important;
+}
+
+#divFilter .slick-next:before {
+    color: black !important;
+    content: "\f105" !important;
+    font-size: 35px !important;
+    font-family: FontAwesome !important;
+    position: relative !important;
+    top: -20px !important;
+}
+
+#divFilter .responsive-img-slider {
+    padding: 0 20px;
+    width: 95%;
+    bottom: 10px;
+}
+#divFilter .responsive-img-slider .slick-prev {
+    left: 0;
+}
+#divFilter .responsive-img-slider .slick-next {
+    right: 0;
+}
+
+#divFilter .filterSelected {
+    border: 3px solid #0a74c7;
+}
